@@ -7,7 +7,7 @@
   <!-- Basic metadata -->
   <property name="title" i18n:translate="">Embedder</property>
   <property name="description" i18n:translate="">A content embedder</property>
-  <property name="content_icon">embedder.png</property>
+  <property name="content_icon">++resource++sc.embedder/embedder.png</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>
   <property name="allowed_content_types" />
@@ -20,7 +20,7 @@
   <property name="add_permission">sc.embedder.AddEmbedder</property>
 
   <property name="behaviors">
-     <element value="plone.app.referenceablebehavior.referenceable.IReferenceable" />
+     <!--element value="plone.app.referenceablebehavior.referenceable.IReferenceable" /-->
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IDublinCore" />
      <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />

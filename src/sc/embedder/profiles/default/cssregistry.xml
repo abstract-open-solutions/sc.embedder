@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_css" meta_type="Stylesheets Registry">
  <stylesheet
-    id="embedder.css"
+    id="++resource++sc.embedder/embedder.css"
     expression=""
     authenticated="False"
     />

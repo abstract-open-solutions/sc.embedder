@@ -14,6 +14,24 @@
         />
 
     <genericsetup:registerProfile
+        name="plone4"
+        title="sc.embedder: Install (Plone 4)"
+        directory="profiles/plone4"
+        description="A content embeder for Plone (Plone 4)"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        i18n:attributes="title; description"
+        />
+
+    <genericsetup:registerProfile
+        name="plone5"
+        title="sc.embedder: Install (Plone 5)"
+        directory="profiles/plone5"
+        description="A content embeder for Plone (Plone 5)"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        i18n:attributes="title; description"
+        />
+
+    <genericsetup:registerProfile
         name="uninstall"
         title="sc.embedder: Uninstall"
         directory="profiles/uninstall"
@@ -22,8 +40,8 @@
         i18n:attributes="title; description"
         />
 
-  <utility factory=".setuphandlers.HiddenProfiles" name="sc.embedder" />
-  <utility factory=".setuphandlers.HiddenProducts" name="sc.embedder" />
+    <utility factory=".setuphandlers.HiddenProfiles" name="sc.embedder" />
+    <utility factory=".setuphandlers.HiddenProducts" name="sc.embedder" />
 
     <include package=".upgrades" />
 

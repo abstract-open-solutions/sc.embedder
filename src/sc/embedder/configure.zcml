@@ -12,7 +12,7 @@
     <i18n:registerTranslations directory="locales" />
 
     <include file="profiles.zcml"/>
-    <include file="skins.zcml"/>
+    <include zcml:condition="not-have plone-5" file="skins.zcml"/>
     <include package=".browser"/>
     <include package=".tiles" zcml:condition="installed collective.cover" />
 
@@ -33,6 +33,7 @@
         />
 
     <adapter
+        zcml:condition="not-have plone-5"
         for="sc.embedder.content.embedder.IEmbedder"
         provides="Products.TinyMCE.adapters.interfaces.JSONDetails.IJSONDetails"
         factory=".adapters.JSONDetails"

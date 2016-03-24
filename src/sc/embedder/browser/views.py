@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from Products.Five.browser import BrowserView
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing  # noqa
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.interfaces.utility import ITinyMCE

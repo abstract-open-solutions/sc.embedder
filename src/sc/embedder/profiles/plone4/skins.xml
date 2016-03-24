@@ -17,18 +17,6 @@
 
  <skin-path name="*">
   <layer
-     name="sc_embedder_images"
-     insert-after="custom"
-     />
-  <layer
-     name="sc_embedder_styles"
-     insert-after="sc_embedder_images"
-     />
-  <layer
-      name="sc_embedder_javascripts"
-      insert-after="sc_embedder_styles"
-      />
-  <layer
       name="sc_embedder_tinymce"
       insert-after="custom"
       />
